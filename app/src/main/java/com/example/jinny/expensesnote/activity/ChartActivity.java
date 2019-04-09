@@ -11,7 +11,7 @@ import androidx.viewpager.widget.ViewPager;
 import android.os.Bundle;
 
 import com.example.jinny.expensesnote.R;
-import com.example.jinny.expensesnote.fragment.ChartFragement;
+import com.example.jinny.expensesnote.fragment.ChartFragment;
 import com.google.android.material.tabs.TabLayout;
 
 public class ChartActivity extends AppCompatActivity {
@@ -45,14 +45,14 @@ public class ChartActivity extends AppCompatActivity {
         @NonNull
         @Override
         public Fragment getItem(int position) {
-            ChartFragement chartFragement = new ChartFragement();
+            ChartFragment chartFragment = new ChartFragment();
             Bundle bundle = new Bundle();
             if (position == 0)
                 bundle.putBoolean("sex", false);
             else
                 bundle.putBoolean("sex", true);
-            chartFragement.setArguments(bundle);
-            return chartFragement;
+            chartFragment.setArguments(bundle);
+            return chartFragment;
         }
 
         @Override

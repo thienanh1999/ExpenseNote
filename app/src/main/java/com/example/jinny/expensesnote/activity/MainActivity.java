@@ -12,6 +12,7 @@ import android.view.View;
 import com.example.jinny.expensesnote.adapter.ExpenseAdapter;
 import com.example.jinny.expensesnote.R;
 import com.example.jinny.expensesnote.model.ExpenseModel;
+import com.example.jinny.expensesnote.utils.Database;
 import com.github.clans.fab.FloatingActionButton;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -57,6 +58,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                             snapshot.child("user").getValue(Integer.class));
                     expenseModels.add(expenseModel);
                     adapter.notifyDataSetChanged();
+                    Database.getInstance(MainActivity.this).setData(expenseModels);
                     id = Math.max(id, expenseModel.getId());
                 }
             }
