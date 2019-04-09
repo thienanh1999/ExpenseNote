@@ -67,8 +67,8 @@ public class ChartFragment extends Fragment {
     }
 
     private void setupPieData() {
+        //get Data
         expenseModels = Database.getInstance(getContext()).getData();
-
         dataMap = new HashMap<>();
         long current;
         float total = 0;
@@ -85,18 +85,14 @@ public class ChartFragment extends Fragment {
             dataMap.put(expenseModel.getNote(), current);
         }
 
+        //setup PieChart
         List<PieEntry> entries = new ArrayList<>();
         for (String s : notes) {
             long amount = dataMap.get(s);
             entries.add(new PieEntry(amount/total, s));
         }
         PieDataSet set = new PieDataSet(entries, "Static");
-        int[] colors = new int[] {R.color.GreenYellow, R.color.greenButton, R.color.BlueViolet,
-                R.color.Brown, R.color.Yellow, R.color.Beige,
-                R.color.Bisque, R.color.Red, R.color.Cyan,
-                R.color.Olive, R.color.Orange, R.color.Blue,
-                R.color.Coral, R.color.Crimson, R.color.Purple};
-        set.setColors(colors , getContext());
+        set.setColors(Utils.getListColor() , getContext());
         PieData data = new PieData(set);
         data.setDrawValues(false);
         pieChart.setData(data);
@@ -117,5 +113,8 @@ public class ChartFragment extends Fragment {
             }
         });
         pieChart.invalidate();
+
+        //setup PieLegend
+
     }
 }

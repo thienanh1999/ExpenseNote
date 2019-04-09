@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <View
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:background="@color/Bisque"
+        android:layout_centerVertical="true"
+        android:id="@+id/entry_color"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_entry_name"
+        android:text="Hello"
+        android:layout_toRightOf="@+id/entry_color"
+        android:paddingLeft="8dp"
+        android:textColor="@color/Black"
+        android:textStyle="bold"
+        android:textSize="16sp"/>
+
+</RelativeLayout>
