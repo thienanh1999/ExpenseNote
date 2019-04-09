@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "439167878399",
+    "firebase_url": "https://expensesnote-45829.firebaseio.com",
+    "project_id": "expensesnote-45829",
+    "storage_bucket": "expensesnote-45829.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:439167878399:android:7e17a654b4b1586f",
+        "android_client_info": {
+          "package_name": "com.example.jinny.expensesnote"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "439167878399-dfqoge40cj9f43lnthgsncl6kdqftjdc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jinny.expensesnote",
+            "certificate_hash": "b2e93c85dc2921bdad119d9375508a808c244af0"
+          }
+        },
+        {
+          "client_id": "439167878399-nkkf9pmto068bo3edcbvl9gvck6lq03s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPn-PaCYxrtV87euWTEsUXtaK0i2PxTTg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "439167878399-nkkf9pmto068bo3edcbvl9gvck6lq03s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
